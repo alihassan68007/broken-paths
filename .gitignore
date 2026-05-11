@@ -1,0 +1,14 @@
+
+.dart_tool/
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
+*.iml
+.idea/
+.vscode/
+macOS/Flutter/ephemeral
+windows/flutter/ephemeral/
+linux/flutter/ephemeral/

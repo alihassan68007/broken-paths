@@ -1,0 +1,132 @@
+{
+  "scenes": [
+    {
+      "id": "scene_1",
+      "speaker": "Narrator",
+      "text": "The morning sun rises over Lahore. You have a big decision to make about your career today.",
+      "backgroundImage": "assets/images/backgrounds/bg_home.png",
+      "characterSprite": "",
+      "choices": [
+        {
+          "text": "Go to the interview for a conventional bank.",
+          "nextSceneId": "scene_bank_interview",
+          "statChanges": {
+            "wealth": 10,
+            "iman": -10,
+            "respect": 5
+          }
+        },
+        {
+          "text": "Start a small halal tech business.",
+          "nextSceneId": "scene_tech_startup",
+          "statChanges": {
+            "knowledge": 10,
+            "iman": 10,
+            "wealth": -5
+          }
+        }
+      ]
+    },
+    {
+      "id": "scene_bank_interview",
+      "speaker": "Bank Manager",
+      "text": "Welcome! We offer great salaries here, but you'll have to handle interest-based accounts.",
+      "backgroundImage": "assets/images/backgrounds/bg_office.png",
+      "characterSprite": "assets/images/characters/manager.png",
+      "choices": [
+        {
+          "text": "Accept the job.",
+          "nextSceneId": "scene_bank_accept",
+          "statChanges": {
+            "wealth": 20,
+            "iman": -20
+          }
+        },
+        {
+          "text": "Politely decline and leave.",
+          "nextSceneId": "scene_tech_startup",
+          "statChanges": {
+            "iman": 15,
+            "respect": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "scene_bank_accept",
+      "speaker": "Narrator",
+      "text": "You accepted the job. Your wealth increases, but you feel a heavy burden on your conscience.",
+      "backgroundImage": "assets/images/backgrounds/bg_office.png",
+      "characterSprite": "",
+      "choices": [
+        {
+          "text": "Reflect on your choices.",
+          "nextSceneId": "end_chapter",
+          "statChanges": {
+            "knowledge": 5
+          }
+        }
+      ]
+    },
+    {
+      "id": "scene_tech_startup",
+      "speaker": "Friend",
+      "text": "MashaAllah, starting a halal business is tough but rewarding! Let's get to work.",
+      "backgroundImage": "assets/images/backgrounds/bg_home.png",
+      "characterSprite": "assets/images/characters/friend.png",
+      "choices": [
+        {
+          "text": "Work late to launch the app.",
+          "nextSceneId": "scene_late_work",
+          "statChanges": {
+            "knowledge": 15,
+            "wealth": 5
+          }
+        },
+        {
+          "text": "Take a break for Maghrib prayer.",
+          "nextSceneId": "scene_prayer",
+          "statChanges": {
+            "iman": 20,
+            "respect": 5
+          }
+        }
+      ]
+    },
+    {
+      "id": "scene_late_work",
+      "speaker": "Narrator",
+      "text": "You worked hard, but you missed your prayer. The app launched successfully though.",
+      "backgroundImage": "assets/images/backgrounds/bg_office.png",
+      "characterSprite": "",
+      "choices": [
+        {
+          "text": "End Chapter",
+          "nextSceneId": "end_chapter",
+          "statChanges": {
+            "wealth": 15,
+            "iman": -10
+          }
+        }
+      ]
+    },
+    {
+      "id": "scene_prayer",
+      "speaker": "Narrator",
+      "text": "You prayed and felt peace. Barakah was added to your time, and the app launch was even more successful the next day.",
+      "backgroundImage": "assets/images/backgrounds/bg_mosque.png",
+      "characterSprite": "",
+      "choices": [
+        {
+          "text": "End Chapter",
+          "nextSceneId": "end_chapter",
+          "statChanges": {
+            "wealth": 10,
+            "iman": 10,
+            "respect": 10
+          }
+        }
+      ]
+    }
+  ]
+}
