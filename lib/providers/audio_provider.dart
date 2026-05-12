@@ -33,6 +33,18 @@ class AudioProvider with ChangeNotifier {
     await _sfxPlayer.play(AssetSource(assetPath));
   }
 
+  Future<void> playButtonClick() async {
+    if (_isMuted) return;
+    // Assuming a placeholder path for now
+    await _sfxPlayer.play(AssetSource('audio/button_click.mp3'));
+  }
+
+  Future<void> playAchievement() async {
+    if (_isMuted) return;
+    // Assuming a placeholder path for now
+    await _sfxPlayer.play(AssetSource('audio/achievement.mp3'));
+  }
+
   @override
   void dispose() {
     _bgmPlayer.dispose();
