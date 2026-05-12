@@ -1,0 +1,93 @@
+{
+  "scenes": [
+    {
+      "id": "scene_1",
+      "speaker": "Narrator",
+      "text": "Aapko ek badi multi-national company se job offer aayi hai. Wahan ka mahol kaafi azaad (mixed gatherings) hai.",
+      "backgroundImage": "assets/images/backgrounds/bg_office.png",
+      "choices": [
+        {
+          "text": "Job accept kar lo, career growth important hai.",
+          "nextSceneId": "scene_accept_job",
+          "statChanges": {
+            "wealth": 40,
+            "iman": -25,
+            "knowledge": 10
+          }
+        },
+        {
+          "text": "Apne chote business par hi mehnat jari rakho.",
+          "nextSceneId": "scene_continue_business",
+          "statChanges": {
+            "iman": 15,
+            "wealth": 10,
+            "respect": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "scene_accept_job",
+      "speaker": "Colleague",
+      "text": "Aaj raat office ki party hai, zaroor aana. Sab log wahin honge.",
+      "backgroundImage": "assets/images/backgrounds/bg_office.png",
+      "choices": [
+        {
+          "text": "Party mein jao taake networking ho.",
+          "nextSceneId": "scene_party",
+          "statChanges": {
+            "iman": -20,
+            "respect": -10
+          }
+        },
+        {
+          "text": "Maazrat kar lo aur ghar wapas aao.",
+          "nextSceneId": "scene_no_party",
+          "statChanges": {
+            "iman": 15,
+            "respect": 5
+          }
+        }
+      ]
+    },
+    {
+      "id": "scene_party",
+      "speaker": "Narrator",
+      "text": "Paisa aur contacts mil gaye, par deen door ho gaya.",
+      "backgroundImage": "assets/images/backgrounds/bg_home.png",
+      "choices": [
+        {
+          "text": "Chapter End",
+          "nextSceneId": "end_chapter",
+          "statChanges": {}
+        }
+      ]
+    },
+    {
+      "id": "scene_no_party",
+      "speaker": "Narrator",
+      "text": "Aapne apne asool bacha liye aur parivar ke saath waqt guzara.",
+      "backgroundImage": "assets/images/backgrounds/bg_home.png",
+      "choices": [
+        {
+          "text": "Chapter End",
+          "nextSceneId": "end_chapter",
+          "statChanges": {}
+        }
+      ]
+    },
+    {
+      "id": "scene_continue_business",
+      "speaker": "Narrator",
+      "text": "Business dheere dheere grow kar raha hai aur dil bilkul mutmain hai.",
+      "backgroundImage": "assets/images/backgrounds/bg_office.png",
+      "choices": [
+        {
+          "text": "Chapter End",
+          "nextSceneId": "end_chapter",
+          "statChanges": {}
+        }
+      ]
+    }
+  ]
+}

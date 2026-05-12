@@ -1,0 +1,105 @@
+{
+  "scenes": [
+    {
+      "id": "scene_1",
+      "speaker": "Narrator",
+      "text": "Aapki zindagi ka ek lamba safar tay ho chuka hai. Ab waqt hai peeche mud kar dekhne ka...",
+      "backgroundImage": "assets/images/backgrounds/bg_home.png",
+      "choices": [
+        {
+          "text": "Apna anjaam dekho.",
+          "nextSceneId": "scene_endings_hub",
+          "statChanges": {}
+        }
+      ]
+    },
+    {
+      "id": "scene_endings_hub",
+      "speaker": "System",
+      "text": "(Developer Hub) Choose your ending based on stats:",
+      "backgroundImage": "assets/images/backgrounds/bg_office.png",
+      "choices": [
+        { "text": "Ending 1: The Balanced Believer", "nextSceneId": "ending_1_balanced" },
+        { "text": "Ending 2: The Wealthy Worldly", "nextSceneId": "ending_2_wealthy" },
+        { "text": "Ending 3: The Poor Scholar", "nextSceneId": "ending_3_scholar" },
+        { "text": "Ending 4: The Respected Elder", "nextSceneId": "ending_4_elder" },
+        { "text": "Ending 5: The Lost Soul", "nextSceneId": "ending_5_lost" },
+        { "text": "Ending 6: The Corrupt Tycoon", "nextSceneId": "ending_6_corrupt" },
+        { "text": "Ending 7: The Ascetic", "nextSceneId": "ending_7_ascetic" },
+        { "text": "Ending 8: The Intellectual", "nextSceneId": "ending_8_intellectual" },
+        { "text": "Ending 9: The Regretful One", "nextSceneId": "ending_9_regretful" },
+        { "text": "Ending 10: The Hidden Saint", "nextSceneId": "ending_10_saint" }
+      ]
+    },
+    {
+      "id": "ending_1_balanced",
+      "speaker": "Narrator",
+      "text": "Kamyabi! Aapne dunya aur aakhirat dono mein tawazun qaim rakha. Allah ne aapke rizq aur waqt mein barkat daali.",
+      "backgroundImage": "assets/images/backgrounds/bg_mosque.png",
+      "choices": [{ "text": "Game Over", "nextSceneId": "end_chapter", "statChanges": {} }]
+    },
+    {
+      "id": "ending_2_wealthy",
+      "speaker": "Narrator",
+      "text": "Aapke paas paisa bohot hai, lekin sukoon nahi. Aapne dunya jeet li, par deen peeche chhoot gaya.",
+      "backgroundImage": "assets/images/backgrounds/bg_office.png",
+      "choices": [{ "text": "Game Over", "nextSceneId": "end_chapter", "statChanges": {} }]
+    },
+    {
+      "id": "ending_3_scholar",
+      "speaker": "Narrator",
+      "text": "Paisa zyada nahi kamaya, magar ilm aur deen mein aage nikal gaye. Log aapki izzat karte hain.",
+      "backgroundImage": "assets/images/backgrounds/bg_home.png",
+      "choices": [{ "text": "Game Over", "nextSceneId": "end_chapter", "statChanges": {} }]
+    },
+    {
+      "id": "ending_4_elder",
+      "speaker": "Narrator",
+      "text": "Aap masharay mein ek moazziz shakhsiyat ban gaye. Log aapke mashware ke mohtaj rehte hain.",
+      "backgroundImage": "assets/images/backgrounds/bg_mosque.png",
+      "choices": [{ "text": "Game Over", "nextSceneId": "end_chapter", "statChanges": {} }]
+    },
+    {
+      "id": "ending_5_lost",
+      "speaker": "Narrator",
+      "text": "Dunya ki daud mein sab kuch kho diya. Na paisa bacha, na izzat, na iman.",
+      "backgroundImage": "assets/images/backgrounds/bg_home.png",
+      "choices": [{ "text": "Game Over", "nextSceneId": "end_chapter", "statChanges": {} }]
+    },
+    {
+      "id": "ending_6_corrupt",
+      "speaker": "Narrator",
+      "text": "Bohot ameer hone ke bawajood, log aapse nafrat karte hain. Apne zameer ka sauda kar liya.",
+      "backgroundImage": "assets/images/backgrounds/bg_office.png",
+      "choices": [{ "text": "Game Over", "nextSceneId": "end_chapter", "statChanges": {} }]
+    },
+    {
+      "id": "ending_7_ascetic",
+      "speaker": "Narrator",
+      "text": "Dunya se kinara kashi ikhtiyar kar li. Sakht zindagi guzari, par Allah se qareeb ho gaye.",
+      "backgroundImage": "assets/images/backgrounds/bg_mosque.png",
+      "choices": [{ "text": "Game Over", "nextSceneId": "end_chapter", "statChanges": {} }]
+    },
+    {
+      "id": "ending_8_intellectual",
+      "speaker": "Narrator",
+      "text": "Duniya ka ilm hasil kiya aur bade scientist/thinker ban gaye, magar roohaniyat ki kami reh gayi.",
+      "backgroundImage": "assets/images/backgrounds/bg_office.png",
+      "choices": [{ "text": "Game Over", "nextSceneId": "end_chapter", "statChanges": {} }]
+    },
+    {
+      "id": "ending_9_regretful",
+      "speaker": "Narrator",
+      "text": "Zindagi bhar ghaltiyan ki, par aakhir mein tauba ka rasta chuna. Umeed hai Allah muaf karega.",
+      "backgroundImage": "assets/images/backgrounds/bg_mosque.png",
+      "choices": [{ "text": "Game Over", "nextSceneId": "end_chapter", "statChanges": {} }]
+    },
+    {
+      "id": "ending_10_saint",
+      "speaker": "Narrator",
+      "text": "Gumnam zindagi guzari, logon ne ahmiyat nahi di. Par asman walo ke nazdeek aap bohot khas the.",
+      "backgroundImage": "assets/images/backgrounds/bg_mosque.png",
+      "choices": [{ "text": "Game Over", "nextSceneId": "end_chapter", "statChanges": {} }]
+    }
+  ]
+}

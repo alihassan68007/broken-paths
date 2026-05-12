@@ -1,0 +1,56 @@
+{
+  "scenes": [
+    {
+      "id": "scene_1",
+      "speaker": "Narrator",
+      "text": "Aapke waalid beemar hain aur unke ilaaj ke liye fauran bohot paiso ki zaroorat hai.",
+      "backgroundImage": "assets/images/backgrounds/bg_hospital.png",
+      "choices": [
+        {
+          "text": "Bank se interest (sood) par loan le lo.",
+          "nextSceneId": "scene_loan",
+          "statChanges": {
+            "wealth": 50,
+            "iman": -30
+          }
+        },
+        {
+          "text": "Doston aur rishtedaron se qarz-e-hasana mango.",
+          "nextSceneId": "scene_qarz",
+          "statChanges": {
+            "iman": 15,
+            "respect": -5
+          }
+        }
+      ]
+    },
+    {
+      "id": "scene_loan",
+      "speaker": "Narrator",
+      "text": "Ilaaj to ho gaya, par loan aur sood chukane ka pressure bohot badh gaya hai.",
+      "backgroundImage": "assets/images/backgrounds/bg_home.png",
+      "choices": [
+        {
+          "text": "Chapter End",
+          "nextSceneId": "end_chapter",
+          "statChanges": {}
+        }
+      ]
+    },
+    {
+      "id": "scene_qarz",
+      "speaker": "Dost",
+      "text": "Fikr mat karo bhai, hum sab tumhare saath hain. Allah asani karega.",
+      "backgroundImage": "assets/images/backgrounds/bg_hospital.png",
+      "choices": [
+        {
+          "text": "Chapter End",
+          "nextSceneId": "end_chapter",
+          "statChanges": {
+            "respect": 15
+          }
+        }
+      ]
+    }
+  ]
+}

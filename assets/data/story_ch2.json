@@ -1,0 +1,56 @@
+{
+  "scenes": [
+    {
+      "id": "scene_1",
+      "speaker": "Narrator",
+      "text": "Ek naya din. Aapke business ko ek investor mil gaya hai, lekin uski shartein ajeeb hain.",
+      "backgroundImage": "assets/images/backgrounds/bg_office.png",
+      "choices": [
+        {
+          "text": "Investment le lo, bhale hi kuch deals doubtful hon.",
+          "nextSceneId": "scene_take_investment",
+          "statChanges": {
+            "wealth": 30,
+            "iman": -25,
+            "respect": 10
+          }
+        },
+        {
+          "text": "Halal usoolon par qaim raho aur mana kar do.",
+          "nextSceneId": "scene_reject_investment",
+          "statChanges": {
+            "iman": 20,
+            "wealth": -10,
+            "respect": 15
+          }
+        }
+      ]
+    },
+    {
+      "id": "scene_take_investment",
+      "speaker": "Investor",
+      "text": "Good choice! Ab hum poori market capture karenge.",
+      "backgroundImage": "assets/images/backgrounds/bg_office.png",
+      "choices": [
+        {
+          "text": "Chapter End",
+          "nextSceneId": "end_chapter",
+          "statChanges": {}
+        }
+      ]
+    },
+    {
+      "id": "scene_reject_investment",
+      "speaker": "Narrator",
+      "text": "Aapne usoolon par samjhauta nahi kiya. Thodi mushkil hui par Allah par bharosa hai.",
+      "backgroundImage": "assets/images/backgrounds/bg_office.png",
+      "choices": [
+        {
+          "text": "Chapter End",
+          "nextSceneId": "end_chapter",
+          "statChanges": {}
+        }
+      ]
+    }
+  ]
+}
